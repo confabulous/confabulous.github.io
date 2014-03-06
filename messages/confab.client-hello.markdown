@@ -1,6 +1,6 @@
 ---
 layout: message
-name: confab.client-hello
+message: confab.client-hello
 ---
 This is the first message of the protocol, sent from the client to the server immediately after successful connection.
 

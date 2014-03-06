@@ -35,14 +35,14 @@
           <h4>Resources</h4>
           <ul style="list-style: none">
             {% for resource in site.data.resources %}
-              <li><a href="/resources/{{resource.url}}.html">{{resource.path}}</a></li>
+              <li><a href="/resources/{{resource.file}}.html">{{resource.path}}</a></li>
             {% endfor %}
           </ul>
 
           <h4>Messages</h4>
           <ul style="list-style: none">
             {% for message in site.data.messages %}
-              <li><a href="/messages/{{message}}.html">{{message}}</a></li>
+              <li><a href="/messages/{{message.file}}.html">{{message.kind}}</a></li>
             {% endfor %}
           </ul>
         </div>

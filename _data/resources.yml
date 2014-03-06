@@ -1,9 +1,0 @@
-- path: /
-  url: root
-
-- path: /roster
-  url: roster
-
-- path: /rooms/...
-  url: room
-
