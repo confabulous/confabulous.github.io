@@ -17,9 +17,13 @@
         <div class="col-md-12">
           <h1>Confabulous messaging documentation</h1>
           <ol class="breadcrumb">
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">{{page.category}}</a></li>
-            <li class="active">{{page.name}}</li>
+            <li><a href="/">Documentation</a></li>
+            {% if page.category %}
+              <li>{{page.category}}</li>
+              {% if page.name %}
+                <li class="active">{{page.name}}</li>
+              {% endif %}
+            {% endif %}
           </ol>
         </div>
       </div>
@@ -35,14 +39,14 @@
           <h4>Resources</h4>
           <ul style="list-style: none">
             {% for resource in site.data.resources %}
-              <li><a href="/resources/{{resource.file}}.html">{{resource.path}}</a></li>
+              <li><a href="/resources/{{resource.file}}.html">{{resource.name}}</a></li>
             {% endfor %}
           </ul>
 
           <h4>Messages</h4>
           <ul style="list-style: none">
             {% for message in site.data.messages %}
-              <li><a href="/messages/{{message.file}}.html">{{message.kind}}</a></li>
+              <li><a href="/messages/{{message.file}}.html">{{message.name}}</a></li>
             {% endfor %}
           </ul>
         </div>
