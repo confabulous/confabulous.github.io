@@ -1,5 +1,5 @@
 ---
 layout: resource
-name: Root
+name: /
 ---
 This is the root resource that handles connection, authentication etc.
