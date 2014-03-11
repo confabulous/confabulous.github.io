@@ -1,6 +1,4 @@
 ---
 layout: default
-title: Confabulous messaging documentation
 ---
-
-{{site.data.testing}}
+[Resources](resources/) and the [messages](messages/) they receive and send are documented here.
