@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<h3>Arguments</h3>
+
+<table>
+  {% for arg in page.args %}
+    <tr>
+      <th>{{arg[0]}}</th>
+      <td>{{arg[1]}}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+<h3>Description</h3>
+
+{{content}}

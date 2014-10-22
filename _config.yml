@@ -1,5 +1,33 @@
 name: Confabulous messaging documentation
 markdown: redcarpet
 redcarpet:
-    extensions: ['tables']
-pygments: true
+  extensions: ['tables']
+highlighter: pygments
+
+collections:
+  requests:
+    output: true
+  notifications:
+    output: true
+  templates:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: requests
+    values:
+      layout: request
+      section: Requests
+  - scope:
+      path: ""
+      type: notifications
+    values:
+      layout: notification
+      section: Notifications
+  - scope:
+      path: ""
+      type: templates
+    values:
+      layout: template
+      section: Templates
